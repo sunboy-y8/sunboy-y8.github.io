@@ -13,9 +13,16 @@ var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
 function setUserName (){
-    var myName = prompt('please enter your name.');
-    localStorage.setItem('name',myName);
-    myHeading.innerHTML = 'Hello '+myName;
+    var myName = prompt('please enter your name.','Mingying');
+    if(myName===null||myName===''){
+        myName = "Baby";
+        if(localStorage.getItem('name')){
+            myName = localStorage.getItem('name');
+        }
+    }else{
+        localStorage.setItem('name',myName);
+    }
+    myHeading.innerHTML = 'Hello '+myName+' !';
 }
 
 if(!localStorage.getItem('name')){
