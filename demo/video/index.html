@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        video {
+            background: black;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Below is a simple video example</h1>
+
+<!--
+<video src="sintel-short.mp4" controls>
+    <p>Your browser doesn't support HTML5 video. Here is a <a href="sintel-short.mp4">link to the video</a> instead.</p>
+</video>
+-->
+<video controls
+       width="400"
+       height="400"
+       loop
+       muted
+       poster="../../images/test-site.png">
+    <source src="sintel-short.mp4" type="video/mp4">
+    <source src="sintel-short.webm" type="video/webm">
+    <track kind="subtitles" src="sintel-en.vtt" srclang="en">
+    <track kind="subtitles" src="sintel-es.vtt" srclang="es">
+    <track kind="subtitles" src="sintel-de.vtt" srclang="de">
+    <p>Your browser doesn't support HTML5 video. Here is a <a href="sintel-short.mp4">link to the video</a> instead.</p>
+</video>
+<br>
+<p>吴亦凡-JULY</p>
+<audio controls>
+    <source src="吴亦凡-JULY.mp3" type="audio/mp3">
+    <p>Your browser doesn't support HTML5 audio. Here is a <a href="吴亦凡-JULY.mp3">link to the audio</a> instead.</p>
+</audio>
+
+
+</body>
+</html>
